@@ -1,28 +1,30 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     background-color: black;
 }
-.main{
-    /* font-family: "Noto Sans", sans-serif; */
+
+.main {
     position: relative;
     background-image: url("assets/images/bg.jpg");
-    background-position: center center;     
-    background-size: max(100vw,1200px);
+    background-position: center center;
+    background-size: max(100vw, 1200px);
     background-repeat: no-repeat;
     height: 80vh;
 
-
 }
 
-.main .box{
+button {
+    cursor: pointer;
+}
+
+.main .box {
     position: absolute;
     top: 0px;
     height: 80vh;
@@ -32,24 +34,24 @@ body{
 
 }
 
-.main nav{
-    height: 68px;
+.main nav {
+    height: 102px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width  : 60vw;
+    max-width: 76vw;
     margin: auto;
 }
 
-.main nav img{
+.main nav img {
     position: relative;
     z-index: 10;
 }
 
-.main nav button{
+.main nav button {
     position: relative;
     z-index: 9;
-    padding:4px 9px;
+    padding: 4px 9px;
     font-size: 15px;
     font-weight: 600;
     color: white;
@@ -57,32 +59,32 @@ body{
 
 }
 
-.lang-btn{
-    background-color:rgb(20, 10, 10);
+.lang-btn {
+    background-color: rgb(20, 10, 10);
     opacity: 0.5;
     color: white;
 }
 
-.sign-btn{
+.sign-btn {
     background-color: red;
     border: 5px solid red;
     border-radius: 5px;
 }
 
 
-.hero{
+.hero {
     font-family: "Noto Sans";
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100% - 68px);
+    height: calc(100% - 102px);
     flex-direction: column;
     position: relative;
     gap: 20px;
-text-align: center;
+    text-align: center;
 }
 
-.hero span{
+.hero span {
     color: white;
 }
 
@@ -92,32 +94,32 @@ text-align: center;
     text-align: center;
 }
 
-.hero> :nth-child(2){
+.hero> :nth-child(2) {
     font-weight: 400;
     font-size: 24px;
     text-align: center;
 }
 
-.hero> :nth-child(3){
+.hero> :nth-child(3) {
     font-weight: 400;
     font-size: 20px;
     text-align: center;
 }
 
 
-.email input{
+.email input {
     color: white;
-    background-color: rgba(0, 0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 44px;
     width: 24vw;
     font-size: 14px;
     padding: 0 10px;
-    border:2px solid rgba(218, 208, 208, 0.5) ;
-    border-radius: ;
+    border: 2px solid rgba(218, 208, 208, 0.5);
+    border-radius: 2px;
 
 }
 
-.email input::placeholder{
+.email input::placeholder {
     color: white;
     font-size: 14px;
     padding: 7px;
@@ -125,7 +127,7 @@ text-align: center;
 }
 
 
-.hero button{
+.hero button {
     background-color: red;
     color: white;
     font-size: 21px;
@@ -136,15 +138,195 @@ text-align: center;
     border-radius: 5px;
 }
 
-.seperation{
+.seperation {
     background-color: rgba(128, 128, 128, 0.586);
     opacity: 0.5;
-    height: 4px;
-    width: 100vw;
+    height: 8px;
+    width: 98vw;
+    margin:  auto;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 10;
 }
 
 
-button:hover{
+button:hover {
     opacity: 0.9;
 
+}
+
+
+.sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 70vw;
+    margin: auto;
+
+}
+
+.sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .sec{
+        flex-wrap: wrap;
+    }
+    .text{
+        padding: 50px 0;
+    }
+
+}
+
+
+
+
+.sec .text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.head {
+    color: white;
+    font-family: "Noto Sans";
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.content {
+    color: white;
+    font-family: "Noto Sans";
+    font-weight: 400;
+    font-size: 24px;
+}
+
+
+#tv2 {
+    position: relative;
+}
+
+#tv2 video {
+    position: absolute;
+    top: 89px;
+    right: 85px;
+}
+
+#tv2 img,
+#tv img {
+    position: relative;
+    z-index: 2;
+}
+
+#tv {
+    position: relative;
+}
+
+#tv video {
+    position: absolute;
+    left: 108px;
+    top: 38px;
+    width: 400px;
+}
+
+.faq {
+    font-family: "Noto Sans";
+}
+
+.faq h2 {
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    font-size: 48px;
+    font-weight: 900;
+
+}
+
+.faqbox {
+    transition: all ease 0.5s;
+    cursor: pointer;
+    padding: 23px 0;
+    background-color: rgba(128, 128, 128, 0.353);
+    /* opacity: 0.5; */
+    max-width: 70vw;
+    margin: 9px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.faqbox:hover {
+    background-color: rgba(128, 128, 128, 0.53);
+}
+
+.faqbox span {
+    color: white;
+    padding: 0 23px;
+    font-size: 24px;
+}
+
+.faqbox svg {
+    padding: 0 23px;
+
+}
+
+
+footer {
+    font-family: "Noto Sans", sans-serif;
+    color: rgba(255, 255, 255, 0.744);
+    font-family: "Noto Sans";
+    width: 70vw;
+    font-size: 14px;
+    margin: auto;
+    padding: 30px 0;
+
+}
+
+
+footer .contact {
+    padding-bottom: 20px;
+    font-size: 16px;
+
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.742);
+    /* text-decoration: n  one; */
+    /* margin: 7px 0; */
+}
+
+.footer a:hover {
+    color: red;
+
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1000px){
+    .footer{
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
