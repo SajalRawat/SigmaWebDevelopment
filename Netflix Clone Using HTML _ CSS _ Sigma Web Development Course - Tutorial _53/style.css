@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+.main{
+    /* font-family: "Noto Sans", sans-serif; */
+    position: relative;
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;     
+    background-size: max(100vw,1200px);
+    background-repeat: no-repeat;
+    height: 80vh;
+
+
+}
+
+.main .box{
+    position: absolute;
+    top: 0px;
+    height: 80vh;
+    width: 100%;
+    opacity: 0.59;
+    background-color: black;
+
+}
+
+.main nav{
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width  : 60vw;
+    margin: auto;
+}
+
+.main nav img{
+    position: relative;
+    z-index: 10;
+}
+
+.main nav button{
+    position: relative;
+    z-index: 9;
+    padding:4px 9px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    margin: 0 8px;
+
+}
+
+.lang-btn{
+    background-color:rgb(20, 10, 10);
+    opacity: 0.5;
+    color: white;
+}
+
+.sign-btn{
+    background-color: red;
+    border: 5px solid red;
+    border-radius: 5px;
+}
+
+
+.hero{
+    font-family: "Noto Sans";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 68px);
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+text-align: center;
+}
+
+.hero span{
+    color: white;
+}
+
+.hero> :first-child {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.email input{
+    color: white;
+    background-color: rgba(0, 0,0,0.5);
+    height: 44px;
+    width: 24vw;
+    font-size: 14px;
+    padding: 0 10px;
+    border:2px solid rgba(218, 208, 208, 0.5) ;
+    border-radius: ;
+
+}
+
+.email input::placeholder{
+    color: white;
+    font-size: 14px;
+    padding: 7px;
+    opacity: 0.5;
+}
+
+
+.hero button{
+    background-color: red;
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 18px;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+}
+
+.seperation{
+    background-color: rgba(128, 128, 128, 0.586);
+    opacity: 0.5;
+    height: 4px;
+    width: 100vw;
+}
+
+
+button:hover{
+    opacity: 0.9;
+
+}
