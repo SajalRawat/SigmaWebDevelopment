@@ -17,6 +17,7 @@ body {
     background-size: max(100vw, 1200px);
     background-repeat: no-repeat;
     height: 80vh;
+    
 
 }
 
@@ -116,7 +117,13 @@ button {
     padding: 0 10px;
     border: 2px solid rgba(218, 208, 208, 0.5);
     border-radius: 2px;
+    
 
+}
+
+.email{
+    display: flex;
+    align-items: center;
 }
 
 .email input::placeholder {
@@ -178,15 +185,6 @@ button:hover {
 
 
 
-@media screen and (max-width: 1300px) {
-    .sec{
-        flex-wrap: wrap;
-    }
-    .text{
-        padding: 50px 0;
-    }
-
-}
 
 
 
@@ -322,11 +320,64 @@ footer a {
     .footer{
         grid-template-columns: 1fr 1fr;
 
-    }
-}
+    }}
 
 .footer-item {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+@media screen and (max-width: 1300px) {
+    .sec{
+        flex-wrap: wrap;
+    }
+    .text{
+        padding: 50px 0;
+    }
+
+    .hero> :first-child{
+        font-size: 32px;
+
+
+    }
+
+    .hero> :nth-child(2){
+        font-size: 14px;
+    }
+    .hero> :nth-child(3){
+        font-size: 14px;
+    }
+
+    .email{
+        flex-direction: column;
+    }
+    
+    .head{
+        font-size: 30px;
+
+    }
+    .content{
+        font-size: 14px;
+    }
+
+    .main nav{
+        max-width: 90vw;
+    }
+
+    .email button{
+
+        font-size: 14px;
+        margin: 10px
+
+    }
+    .email input{
+        width: 200px;
+    }
+
+    .faq h2{
+font-size: 32px;
+    }
+    .faqbox span {
+        font-size: 18px;
+    }
 }
